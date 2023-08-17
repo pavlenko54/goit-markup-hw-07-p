@@ -1,7 +1,10 @@
 // BASE--------------------------------
-@import "./utils/variables";
 @import "./base/reset";
 @import "./components/container";
+
+// UTILS-------------------------------
+@import "./utils/variables";
+@import "./utils/mixin";
 
 // HEADER------------------------------
 @import "./components/header/header";

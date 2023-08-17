@@ -32,9 +32,9 @@
     }
    
     .contacts__icon{
-        display: flex;
+        @include align-list;
+
         justify-content: center;
-        align-items: center;
         fill: var(--paragraph-text-color);
         margin-right: 10px;
 

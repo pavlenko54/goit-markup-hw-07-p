@@ -18,10 +18,10 @@
     top: 8px;
     right: 8px;
     padding: 0;
-    display: flex;
     justify-content: center;
-    align-items: center;
 
+    @include align-list;
+ 
 width: 30px;
 height: 30px;
 border-radius: 50%;
@@ -47,8 +47,8 @@ margin-bottom: 12px;
 }
 
 .modal__btn{
-    display: flex;
-    align-items: center;
+ @include align-list;
+
 margin: 0 auto;
     border: 0;
 padding: 10px 52px;

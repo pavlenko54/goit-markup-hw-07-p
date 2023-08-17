@@ -29,8 +29,9 @@ text-transform: uppercase;
     width: 44px;
 height: 44px;
 border-radius: 50%;
-display: flex;
-align-items: center;
+
+@include align-list;
+
 justify-content: center;
 background-color: rgba(255, 255, 255, 0.10);;
 

@@ -1,7 +1,7 @@
 .checkbox{
-    display: flex;
+    @include align-list;
+
     justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -37,10 +37,10 @@ border-color: var(--accent-color);
 }
 
 .checkbox__label{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include align-list;
     
+    justify-content: center;
+
     color: var(--paragraph-text-color);
 font-size: 14px;
 font-weight: 400;
