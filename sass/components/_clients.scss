@@ -16,13 +16,9 @@
     
     }
     
-    
-    
     .clients__item+.clients__item{
     margin-left: 30px;
     }
-    
-    
     
     .clients__link{
     box-sizing: border-box;
@@ -35,16 +31,16 @@
     align-items: center;
     justify-content: center;
     fill: var(--color-icon);
-    }
-    
-    .clients__link:hover,
-    .clients__link:focus {
+
+    &:hover,
+    &:focus {
         border: 1px solid var(--accent-color);
         transition: 250ms var(--timing-function);
     }
-    
-    .clients__link:hover,
-    .clients__link:focus{
+
+    &:hover,
+    &:focus{
     fill: var(--accent-color);
     transition: 250ms var(--timing-function);
+    }
     }

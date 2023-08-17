@@ -1,8 +1,5 @@
 .adress-footer{
-
     margin-bottom: 9px;
-
-
     color: var(--secondary-text-color);
 
     font-size: 14px;
@@ -33,9 +30,10 @@ color: var(--paragraph-text-color);
 font-size: 14px;
 font-weight: 500;
 line-height: 2.28;
-letter-spacing: 0.28px;}
+letter-spacing: 0.28px;
 
-.contacts-footer__link:hover,
-.contacts-footer__link:focus{color: var(--accent-color);
+&:hover,
+&:focus{color: var(--accent-color);
     transition: 250ms var(--timing-function);
+}
 }
