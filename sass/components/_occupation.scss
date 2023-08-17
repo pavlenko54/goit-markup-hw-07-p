@@ -1,8 +1,7 @@
 .occupation__title{
-
-    margin-bottom: 50px;
-    padding-left: auto;
-    padding-right: auto;
+ margin-bottom: 50px;
+ padding-left: auto;
+ padding-right: auto;
 
     color: var(--basic-text-color);
 
@@ -14,17 +13,14 @@ letter-spacing: 1.08px;
 }
 
 .occupation__list{
-   
-
-
     display: flex;
     list-style: none;
-
 }
+
 .occupation__item{
     margin-right: 30px;
+&:last-child{margin-right: 0;}
 }
-.occupation__item:last-child{margin-right: 0;}
 
 .occupation__wrapper{
 position: relative;
@@ -49,6 +45,4 @@ font-weight: 700;
 line-height: 1.2;
 letter-spacing: 0.42px;
 text-transform: uppercase;
-
-
 }

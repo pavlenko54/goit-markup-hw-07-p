@@ -6,11 +6,11 @@
     
     .contacts__item{
         align-items: center;
+        & + &{
+            margin-left: 50px;
+        }
     }
-    
-    .contacts .contacts__item + .contacts__item{
-        margin-left: 50px;
-    }
+
     
     .contacts__link{
     

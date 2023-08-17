@@ -158,8 +158,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.contacts .contacts__item + .contacts__item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
@@ -256,7 +255,6 @@ img {
   display: flex;
   list-style: none;
 }
-
 .advantages__list .advantages__item + .advantages__item {
   margin-left: 30px;
 }
@@ -319,7 +317,6 @@ img {
 .occupation__item {
   margin-right: 30px;
 }
-
 .occupation__item:last-child {
   margin-right: 0;
 }
@@ -369,16 +366,15 @@ img {
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   padding-bottom: 30px;
 }
+.team__item:last-child {
+  margin-right: 0;
+}
 
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-}
-
-.team__item:last-child {
-  margin-right: 0;
 }
 
 .team__img {
@@ -785,7 +781,6 @@ img {
   display: flex;
   list-style: none;
 }
-
 .portfolio-list .portfolio-list__item + .portfolio-list__item {
   margin-left: 30px;
 }
@@ -815,27 +810,6 @@ img {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.48px;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  -webkit-transform: scale(0%);
-          transform: scale(0%);
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
 }
 
 .modal {
@@ -890,6 +864,118 @@ img {
   line-height: 1.2;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+}
+
+.modal__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border: 0;
+  padding: 10px 52px;
+  min-width: 200px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: var(--accent-color);
+  cursor: pointer;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: react(0);
+}
+
+.checkbox__icon {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border-radius: 2px;
+  border-color: var(--basic-text-color);
+  border: 2px solid var(--basic-text-color);
+}
+.checkbox__input:checked + .checkbox__icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/modal-icon-checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--paragraph-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.checkbox__link {
+  color: var(--accent-color);
+  margin-left: 7px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transform: scale(0%);
+          transform: scale(0%);
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
 }
 
 .modal-form__input {
@@ -975,95 +1061,4 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 20px;
-}
-
-.checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-}
-
-.checkbox__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: react(0);
-}
-
-.checkbox__icon {
-  display: inline-block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border-radius: 2px;
-  border-color: var(--basic-text-color);
-  border: 2px solid var(--basic-text-color);
-}
-.checkbox__input:checked + .checkbox__icon {
-  background-color: var(--accent-color);
-  background-image: url(../images/modal-icon-checkbox.svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--accent-color);
-}
-
-.checkbox__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--paragraph-text-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-
-.checkbox__link {
-  color: var(--accent-color);
-  margin-left: 7px;
-}
-
-.modal__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  border: 0;
-  padding: 10px 52px;
-  min-width: 200px;
-  color: var(--secondary-text-color);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: var(--accent-color);
-  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
