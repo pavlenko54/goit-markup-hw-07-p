@@ -1,15 +1,45 @@
+// BASE--------------------------------
 @import "./utils/variables";
 @import "./base/reset";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/advantages";
-@import "./components/occupation";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/portfolio";
-@import "./components/modal";
 @import "./components/container";
+
+// HEADER------------------------------
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/site-nav";
+@import "./components/header/contacts";
+
+// HERO--------------------------------
+@import "./components/hero/hero";
+@import "./components/hero/hero__btn";
+
+// ADVANTAGES--------------------------
+@import "./components/advantages";
+
+// OCCUPATION--------------------------
+@import "./components/occupation";
+
+// TEAM--------------------------------
+@import "./components/team";
+
+// CLIENTS-----------------------------
+@import "./components/clients";
+
+// FOOTER------------------------------
+@import "./components/footer/footer";
+@import "./components/footer/footer-logo";
+@import "./components/footer/contacts-footer";
+@import "./components/footer/footer-socials";
+@import "./components/footer/footer-form";
+
+// PORTFOLIO---------------------------
+@import "./components/portfolio/portfolio";
+@import "./components/portfolio/portfolio-list";
+
+// MODAL-------------------------------
+@import "./components/modal";
+
+
 
 
 
