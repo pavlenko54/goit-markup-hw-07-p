@@ -39,10 +39,9 @@ transition:  250ms var(--timing-function);
 .modal__title{
     color: var(--basic-text-color);
 text-align: center;
-font-size: 20px;
-font-weight: 700;
-line-height: 1.2;
-letter-spacing: 0.6px;
+
+@include font(20px, 700, 1.2, 0.6px);
+
 margin-bottom: 12px;
 }
 
@@ -57,10 +56,9 @@ min-width: 200px;
     color: var(--secondary-text-color);
 
 text-align: center;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.87;
-letter-spacing: 0.96px;
+
+@include font(16px, 700, 1.87, 0.96px);
+
 border-radius: 4px;
 background: var(--accent-color);
 cursor: pointer;

@@ -42,10 +42,8 @@ border-color: var(--accent-color);
     justify-content: center;
 
     color: var(--paragraph-text-color);
-font-size: 14px;
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.42px;
+
+    @include font(14px, 400, 1.71, 0.42px);
 }
 
 .checkbox__link{

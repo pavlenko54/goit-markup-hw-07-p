@@ -16,10 +16,9 @@
     color: var(--basic-text-color);
 
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
+
+    @include font(16px, 500, 1.62, 0.48px);
+ 
     cursor: pointer;
 
 &:hover,
@@ -30,9 +29,8 @@
     transition: 250ms var(--timing-function);
 
 text-align: center;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.62;
-letter-spacing: 0.48px;
+
+@include font(16px, 500, 1.62, 0.48px);
+
 }
 }

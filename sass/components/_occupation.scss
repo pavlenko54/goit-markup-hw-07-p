@@ -6,10 +6,9 @@
     color: var(--basic-text-color);
 
 text-align: center;
-font-size: 36px;
-font-weight: 700;
-line-height: 0.88;
-letter-spacing: 1.08px;
+
+@include font(36px, 700, 0.88, 1.08px);
+
 }
 
 .occupation__list{
@@ -40,9 +39,8 @@ transform: translate(-50%);
 background-color: rgba(47, 48, 58, 0.80);
 color: var(--secondary-text-color);
 text-align: center;
-font-size: 14px;
-font-weight: 700;
-line-height: 1.2;
-letter-spacing: 0.42px;
+
+@include font(14px, 700, 1.2, 00.42px);
+
 text-transform: uppercase;
 }

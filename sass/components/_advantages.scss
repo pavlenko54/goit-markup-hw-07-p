@@ -22,11 +22,8 @@ align-items: center;
 .advantages__title{
 
     color: var(--basic-text-color);
+    @include font(14px, 700, 1.2, 0.42px);
 
-font-size: 14px;
-font-weight: 700;
-line-height: 1.2;
-letter-spacing: 0.42px;
 text-transform: uppercase;
 }
 .advantages__text{

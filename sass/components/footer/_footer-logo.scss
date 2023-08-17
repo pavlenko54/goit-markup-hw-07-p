@@ -6,10 +6,8 @@
     color: var(--secondary-text-color);
 
     font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.23;
-    letter-spacing: 0.78px;
+
+    @include font(26px, 700, 1.23, 0.78px);
 }
 
 .footer-logo__span{

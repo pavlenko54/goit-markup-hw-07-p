@@ -13,19 +13,16 @@
     
     .modal-form__label{
         color: var(--paragraph-text-color);
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.2;
-        letter-spacing: 0.12px;
+
+        @include font(12px, 400, 1.2, 0.12px);
+
     }
     
     
     .modal-text::placeholder{
         color: rgba(117, 117, 117, 0.50);
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1.2;
-        letter-spacing: 0.12px;
+        @include font(12px, 400, 1.2, 0.12px);
+
     }
     .modal-form__wrapper{
         position: relative;

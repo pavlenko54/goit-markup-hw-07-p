@@ -8,10 +8,8 @@
         color: var(--basic-text-color);
     
     text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 0.88;
-    letter-spacing: 1.08px;
+
+    @include font(36px, 700, 0.88, 1.08px);
     }
     
     .team__item{
@@ -39,10 +37,8 @@
         color: var(--basic-text-color);
     
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2;
-    letter-spacing: 0.48px;
+
+    @include font(16px, 500, 2, 0.48px);
     }
     .team__text{
     margin-bottom: 16px;
@@ -50,9 +46,8 @@
         color: var(--paragraph-text-color);
     
     text-align: center;
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 0.48px;
+
+    @include font(16px, null, 2, 0.48px);
     }
     
     

@@ -11,10 +11,8 @@ margin-left: 93px;
     display: inline-block;
     margin-bottom: 20px;
     color: var(--secondary-text-color);
-font-size: 14px;
-font-weight: 700;
-line-height: 1.1;
-letter-spacing: 0.42px;
+    @include font(14px, 700, 1.1, 0.42px);
+
 text-transform: uppercase;
 
 }
@@ -47,10 +45,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 color: var(--secondary-text-color);
 text-align: center;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.87;
-letter-spacing: 0.96px;
+@include font(16px, 700, 1.87, 0.96px);
+
 cursor: pointer;
 border: none;
 
